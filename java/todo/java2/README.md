@@ -1,5 +1,9 @@
 # java2 lab
 
+### Objective
+* copy project into your own repo
+* complete methods so all unit tests pass
+
 ### Run all tests
 ```
 mvn test
@@ -9,9 +13,6 @@ mvn test
 ```
 mvn test -Dtest=LabTest#testFibonacci
 ```
-
-### Objective
-* complete methods so all unit tests pass
 
 ### Topics
 * Recursion
