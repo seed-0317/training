@@ -206,6 +206,7 @@ How were we able to create instances without defining a constructor?
 * the **default constructor** is a no arg constructor: `public Person(){}`
 
 # Pass by value
+* Learn [stack vs heap](stack-vs-heap.md) first
 * Other languages have concepts of *pass by value* and *pass by reference*
 * Java does not allow us access to pointers
 * Java is only *pass by value*
