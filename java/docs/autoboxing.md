@@ -35,4 +35,15 @@ int y = x;
 ```
 
 # warning
-autoboxing is a nice feature, but if you forget that it is happening then you could run into performance issues
+autoboxing is a nice feature, but if you forget that it is happening then you could run into performance issues - [link](https://effective-java.com/2015/01/autoboxing-performance/)
+
+```java
+public Integer[] testIntegerBoxing() {
+    Integer[] ints = new Integer[MAX_SIZE];
+    for (int i=0; i < MAX_SIZE; i++) {
+        //boxing here -> object instantiation
+        ints[i] = i;
+    }
+    return ints;
+}
+```
