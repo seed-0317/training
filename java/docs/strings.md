@@ -60,3 +60,34 @@ String one = new String("cat" + "dog");
 * do not add strings together a lot
   * if you need to, use `StringBuilder` instead
 * use `equals` method to determine equality
+
+# [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)
+* useful methods
+  * `length`
+  * `charAt`
+  * `contains`
+  * `indexOf`
+  * `split`
+  * `substring`
+  * `trim`
+
+# [StringBuilder](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html)
+* useful methods
+  * `append`
+  * `insert`
+  * `delete`
+  * `reverse`
+  * `substring`
+
+example
+
+```
+public static void main(String []args){
+   StringBuilder sb = new StringBuilder();
+   for(int i = 0; i < 100; i++) {
+       sb.append(i);
+   }
+   String str = sb.toString();
+   System.out.println(str);
+}
+```
