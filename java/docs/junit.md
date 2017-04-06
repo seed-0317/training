@@ -12,7 +12,7 @@
 * `@Test` - unit test
 * `@Ignore` - ignore a unit test
 * `@Before` - runs before each unit test
-* `@@BeforeClass` - runs **once** before all unit tests in the class
+* `@BeforeClass` - runs **once** before all unit tests in the class
 * `@After`
 * `@AfterClass`
 
