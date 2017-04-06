@@ -13,15 +13,29 @@
 * [autoboxing](autoboxing.md)
 * [package-import](package-import.md)
 * [variable-scopes](variable-scopes.md)
-
-<br/>
-
 * [encapsulation](encapsulation.md)
 * [inheritance](inheritance.md)
 * [abstraction-and-polymorphism](abstraction-and-polymorphism.md)
 * [final](final.md)
 * [interfaces](interfaces.md)
+
+<br/>
+
 * [junit](junit.md)
 * [scanner](scanner.md)
+* [exceptions](exceptions.md)
 * [fileio](fileio.md)
 * [json](json.md)
+* [object-class](object-class.md)
+* [generics](generics.md)
+* [collections](collections.md)
+* [comparable-and-comparator](comparable-and-comparator.md)
+
+<br/>
+
+* [static class](static-class.md)
+* [string parsing](string-parsing.md)
+* [debug](debug.md)
+* [log4j](../examples/logging/)
+* [favor-composition-over-inheritance](favor-composition-over-inheritance.md)
+* [threads](threads.md)

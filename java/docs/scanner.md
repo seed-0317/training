@@ -1,5 +1,4 @@
-# `Scanner`
-* [docs](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+# [Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
 * Simple text scanner
 
 
