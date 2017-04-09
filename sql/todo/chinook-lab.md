@@ -1,4 +1,27 @@
 # chinook sql lab
+
+### How to submit lab
+
+Push answers up to personal repo. For example:
+
+```
+# 2 SQL Queries
+
+### 2.1 SELECT
+* Task – Select all records from the Employee table.
+
+select * from "Employee";
+
+* Task – Select all records from the Employee table where last name is King.
+
+select * from employees where last_name = 'King';
+
+* Task – Select all records from the Employee table where first name is Andrew and REPORTSTO is NULL.
+
+select * from employees where first_name = 'Andrew' and reports_to is null;
+```
+
+# Contents
 * [1 Setting up Chinook](#1-setting-up-chinook)
 * [2 SQL Queries](#2-sql-queries)
 * [3 SQL Functions](#3-sql-functions)
