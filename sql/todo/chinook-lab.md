@@ -1,11 +1,11 @@
 # chinook sql lab
 * [Setting up Chinook](#1-setting-up-chinook)
 * [SQL Queries](#2-sql-queries)
-* [SQL Functions](3-sql-functions)
-* [Stored Procedures](4-stored-procedures)
-* [Transactions](5-transactions)
-* [Triggers](6-triggers)
-* [Joins](7-triggers)
+* [SQL Functions](#3-sql-functions)
+* [Stored Procedures](#4-stored-procedures)
+* [Transactions](#5-transactions)
+* [Triggers](#6-triggers)
+* [Joins](#7-joins)
 
 # 1 Setting up Chinook
 N/A - *(You should already have the chinook database set up)*
