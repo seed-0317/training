@@ -101,3 +101,4 @@ You should see 11 tables
 
 # Useful Links
 * [PostgreSQL Command Line Cheat Sheet](http://blog.jasonmeridth.com/posts/postgresql-command-line-cheat-sheet/)
+* [Chinook Schema](https://chinookdatabase.codeplex.com/wikipage?title=Chinook_Schema&referringTitle=Documentation)
