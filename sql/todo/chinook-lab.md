@@ -10,7 +10,7 @@ Push answers up to personal repo. For example:
 ### 2.1 SELECT
 * Task – Select all records from the Employee table.
 
-select * from "Employee";
+select * from employees;
 
 * Task – Select all records from the Employee table where last name is King.
 
