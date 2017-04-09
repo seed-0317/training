@@ -1,5 +1,5 @@
 # chinook sql lab
-* 1) Setting up Chinook
+* [Setting up Chinook](setting-up-chinook)
 * 2) SQL Queries
 * 3) SQL Functions
 * 4) Stored Procedures
