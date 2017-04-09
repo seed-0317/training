@@ -85,7 +85,7 @@ psql chinook-db chinook-user
 \dt
 ```
 
-You should see 11 tables
+You should see 16 tables
 
 ###### 4. quit out of `psql`
 
@@ -99,6 +99,12 @@ You should see 11 tables
 
 <br/>
 
+### Notes
+There are issues with the original Chinook Postgres script.  Following the advice from this [blog](http://johnatten.com/2015/04/05/a-more-useful-port-of-the-chinook-database-to-postgresql/) we will be using a modified script.
+* [Link to script used for this lab](https://github.com/xivSolutions/ChinookDb_Pg_Modified/tree/pg_names)
+
+<br/>
+
 # Useful Links
 * [PostgreSQL Command Line Cheat Sheet](http://blog.jasonmeridth.com/posts/postgresql-command-line-cheat-sheet/)
-* [Chinook Schema](https://chinookdatabase.codeplex.com/wikipage?title=Chinook_Schema&referringTitle=Documentation)
+* [Chinook Schema (11 tables)](https://chinookdatabase.codeplex.com/wikipage?title=Chinook_Schema&referringTitle=Documentation)
