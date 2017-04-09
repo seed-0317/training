@@ -72,7 +72,7 @@ createdb -O chinook-user chinook-db
 
 ###### 2. Populate the `chinook` database with tables & data
 ```
-psql chinook-db chinook-user -f scripts/Chinook_PostgreSql.sql
+psql chinook-db chinook-user -f scripts/chinook-postgres.sql
 ```
 
 ###### 3. Verify setup is correct *(command line)*
