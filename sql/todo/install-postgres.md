@@ -100,7 +100,7 @@ You should see 16 tables
 <br/>
 
 ### Notes
-There are issues with the original Chinook Postgres script.  Following the advice from this [blog](http://johnatten.com/2015/04/05/a-more-useful-port-of-the-chinook-database-to-postgresql/) we will be using a modified script.
+There are issues with the original Chinook Postgres script.  Following the advice from this [blog](http://johnatten.com/2015/04/05/a-more-useful-port-of-the-chinook-database-to-postgresql/) we used a modified script.
 * [Link to script used for this lab](https://github.com/xivSolutions/ChinookDb_Pg_Modified/tree/pg_names)
 
 <br/>
