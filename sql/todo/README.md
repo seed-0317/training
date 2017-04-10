@@ -1,3 +1,3 @@
 # SQL Todo
-* [Install Postgres](install-postgres.md)
+* [Install Postgres & Set up Chinook](install-postgres.md)
 * [Chinook Lab](chinook-lab.md)
