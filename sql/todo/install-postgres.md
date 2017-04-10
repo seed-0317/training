@@ -71,6 +71,8 @@ createdb -O chinook-user chinook-db
 ```
 
 ###### 2. Populate the `chinook` database with tables & data
+Run this command from within the `training/sql/todo/` directory
+
 ```
 psql chinook-db chinook-user -f scripts/chinook-postgres.sql
 ```
