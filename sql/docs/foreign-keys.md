@@ -76,7 +76,7 @@
 
 # Composite PK
 
-```
+```sql
 CREATE TABLE clazz_student(
   cat INT,
   dog INT,

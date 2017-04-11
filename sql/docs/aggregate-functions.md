@@ -3,7 +3,7 @@
 
 # copy pasta
 
-```
+```sql
 create table person(
   p_id    int  primary key,
   p_name  text,
@@ -31,7 +31,7 @@ insert into person values(6, 'scout',    32, 'NY');
 |   5  | courtney |   32  |    NY   |
 |   6  |   scout  |   32  |    NY   |
 
-```
+```sql
 select p_state from person
 group by p_state;
 ```
@@ -47,7 +47,7 @@ group by p_state;
 * functions based on *the whole*
 * `count`, `max`, `average`
 
-```
+```sql
 select avg(p_age), p_state from person
 group by p_state;
 ```

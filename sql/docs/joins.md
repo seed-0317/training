@@ -10,7 +10,7 @@
 
 # example
 
-```
+```sql
 CREATE TABLE department(
   d_id   INT  PRIMARY KEY,
   d_name TEXT
@@ -49,7 +49,7 @@ INSERT INTO phone_numbers(p_id, p_number, cat) VALUES(103, '0000004444', 30);
 INSERT INTO phone_numbers(p_id, p_number, cat) VALUES(104, '0000005555', 60);
 ```
 
-```
+```sql
 /* select */
 select * from department;
 select d_name from department;
@@ -90,11 +90,11 @@ where d_name = 'sales';
 * A `select` statement returns a **result set**, which is in the same format as a table
 * So we can do nested `select` statements
 
-```
+```sql
 select e_name bahhh from employee;
 ```
 
-```
+```sql
 select sheep.bahhh from (
     select e_name bahhh from employee
 ) sheep;

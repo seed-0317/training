@@ -22,13 +22,13 @@ You can also use **pgAdmin** or any other client to run these commands.
 * no name
 * balance is not a number
 
-```
+```xml
 <account>
   <balance>hello world</balance>
 </account>
 ```
 
-```
+```json
 {
   "balance" : "hello world"
 }
@@ -43,14 +43,14 @@ You can also use **pgAdmin** or any other client to run these commands.
 | john    |   100.00   |
 |  amy    |   200.12   |
 
-```
+```sql
 CREATE TABLE bank_account(
   ba_name    TEXT     NOT NULL,
   ba_balance NUMERIC  NOT NULL
 );
 ```
 
-```
+```sql
 INSERT INTO bank_account(ba_name, ba_balance) VALUES ('john', 100);
 INSERT INTO bank_account(ba_name, ba_balance) VALUES ('amy', 200.12);
 
@@ -88,8 +88,9 @@ INSERT INTO bank_account(ba_name, ba_balance) VALUES ('amy', 200.12);
   * further restrict values
 
 # Primary Key
+* `serial` type auto increments
 
-```
+```sql
 CREATE TABLE person(
   p_id   INT   PRIMARY KEY,
   p_name TEXT
@@ -102,7 +103,7 @@ INSERT INTO person(p_name) VALUES('austin');        /* fail - PK must not be nul
 
 # Foreign Key
 
-```
+```sql
 CREATE TABLE department(
   d_id   INT  PRIMARY KEY,
   d_name TEXT
@@ -139,7 +140,7 @@ DELETE FROM department WHERE d_name='marketing'; /* success */
 
 # Check
 
-```
+```sql
 CREATE TABLE person(
   age INT,
   CHECK (age >= 0)

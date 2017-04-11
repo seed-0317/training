@@ -6,13 +6,13 @@ problem
 * no name
 * balance is not a number
 
-```
+```xml
 <account>
   <balance>hello world</balance>
 </account>
 ```
 
-```
+```json
 {
   "balance" : "hello world"
 }
