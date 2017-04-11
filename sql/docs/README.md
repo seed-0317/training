@@ -7,3 +7,8 @@
 * [joins](joins.md)
 * [aggregate functions](aggregate-functions.md)
 * [sql injection](sql-injection.md)
+
+<br/>
+
+* [plpgsql](plpgsql.md)
+* [jdbc](jdbc.md)
