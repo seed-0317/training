@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+
+body {
+	background-color: #6491ca;
+}
+
+#test {
+	background-color: #FFFFFF;
+}
+
+#animal-list > div {
+	display: inline;
+}
+
+
+
+
+
+
+/* p {
+	background-color: #00FF00;
+}
+
+
+.one {
+	color: red;
+}
+
+
+.two {
+	color: blue;
+} */
+
+
