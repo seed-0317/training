@@ -82,7 +82,7 @@ N/A - *(You should already have the chinook database set up)*
 # 4 Stored Procedures
 N/A
 
-# 5 Transactions
+# 5 Transactions *(optional)*
 In this section you will be working with transactions. Transactions are usually nested within a stored procedure.
 
 * Task – Create a transaction that given a invoiceId will delete that invoice (There may be constraints that rely on this, find out how to resolve them).
