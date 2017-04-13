@@ -43,6 +43,7 @@
 * HTML
 * CSS
 * Bootstrap
+* JavaScript
 
 # Environment:
 * Tomcat 8.x
