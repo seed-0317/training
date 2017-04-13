@@ -1,9 +1,9 @@
 # Expense Reimbursement System (ERS)
 
 # Teams
-* a -
-* b -
-* c -
+* a - Aleks, Cory, Ben, Chris
+* b - Steve Mustanski, Chad, Sudhakar
+* c - Shaun, Amanda, Steve Morris, Stephen
 
 # Notes
 * Use environment variables for database connection information
