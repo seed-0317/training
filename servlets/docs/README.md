@@ -1,13 +1,13 @@
 # Servlets
 
-* [servlets](docs/servlets.md)
-* [redirect vs forward](docs/redirect-vs-forward.md)
-* [printwriter](docs/printwriter.md)
-* [freemarker](docs/freemarker.md)
-* [http session](docs/http-session.md)
-* [ServletContext and ServletConfig](docs/servletcontext-and-servletconfig.md)
+* [servlets](servlets.md)
+* [redirect vs forward](redirect-vs-forward.md)
+* [printwriter](printwriter.md)
+* [freemarker](freemarker.md)
+* [http session](http-session.md)
+* [ServletContext and ServletConfig](servletcontext-and-servletconfig.md)
 
 <br/>
 
-* [http status codes](docs/http-status-codes.md)
-* [http methods](docs/http-methods.md)
+* [http status codes](http-status-codes.md)
+* [http methods](http-methods.md)
