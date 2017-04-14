@@ -66,7 +66,7 @@ INSERT INTO bank_account(ba_name, ba_balance) VALUES ('amy', 200.12);
 * `SELECT`, `INSERT`, `UPDATE`, `DELETE`
 
 # TCL
-* Transaction Control Statements
+* Transaction Control Language
 * `COMMIT`, `ROLLBACK`, `SAVEPOINT`,  `SET TRANSACTION`
 
 # Note
