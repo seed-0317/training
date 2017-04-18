@@ -1,6 +1,6 @@
 # Homework
 
-Copy this `homework` directory to your personal repo
+Copy this `homework` directory to your personal repo.  Write code such that all tests pass.
 
 ### 1. Install node and npm
 
