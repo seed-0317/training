@@ -22,6 +22,11 @@ public class BusinessLogic {
         people.put("scout",    new Person("scout",    42));
     }
 
+    /**
+     *
+     * @param username
+     * @return person object if logged in successfully, otherwise {@code null}
+     */
     public Person login(String username) {
         if(username == null || username.isEmpty()) {
             // Could also: throw new IllegalArgumentException();
