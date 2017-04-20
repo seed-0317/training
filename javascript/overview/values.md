@@ -60,7 +60,7 @@ var y = null; //null
 * *not a number*
 
 ```
-var x = 1/0; //NaN
+var x = 0/0; //NaN
 ```
 
 
