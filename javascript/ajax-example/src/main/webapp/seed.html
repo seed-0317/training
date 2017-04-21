@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seed</title>
+</head>
+<body>
+
+Enter name: <input id="input-name" type="text"/>
+<button id="my-button">Click Here</button>
+
+<h1 id="pokemon-name"></h1>
+
+
+<script>
+  document.getElementById("my-button").addEventListener("click", function(event){
+      var input = document.getElementById("input-name").value;
+      console.log("input: " + input);
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function() {
+          if(this.readyState === 4 && this.status === 200) {
+
+              var pokemonObject = JSON.parse(this.responseText);
+              console.log(pokemonObject.name);
+
+              document.getElementById("pokemon-name").innerHTML = pokemonObject.name;
+
+          }
+      }
+
+      var url = "http://pokeapi.co/api/v2/pokemon/" + input + "/";
+
+      xhr.open("GET", url);
+
+      xhr.send();
+
+
+
+  });
+
+</script>
+
+</body>
+</html>
