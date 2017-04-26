@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html data-ng-app="DogModule">
+<head>
+<meta charset="UTF-8">
+<title>Controller as syntax</title>
+</head>
+<body>
+
+  <div data-ng-controller="CatController as cat">
+      	
+  	<h3>{{cat.count}}</h3>
+  	
+  	<button data-ng-click="cat.increment()">Increment!</button>
+  	
+  </div>
+  
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script type="text/javascript">
+  
+    angular.module("DogModule", []);
+    
+    angular.module("DogModule").controller("CatController", function() {
+    	
+    	this.count = 0;
+    	
+    	this.increment = function() {
+    		this.count++;
+    	}
+    	
+    });
+  
+  </script>
+
+</body>
+</html>

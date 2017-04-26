@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-ng-app="DogModule">
+<head>
+<meta charset="UTF-8">
+<title>Angular Service</title>
+</head>
+<body>
+
+  <div data-ng-controller="CatController as cat">
+    
+    <input type="text" data-ng-model="squirrel"/>
+    
+    <ul>
+      <li data-ng-repeat="person in cat.people | orderBy:'state' | filter:squirrel">
+        {{person.name}}, {{person.state}}
+      </li>
+    </ul>
+	
+  	
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script type="text/javascript">
+  
+    angular.module("DogModule", []);
+    
+    angular.module("DogModule").controller("CatController", function(MyAwesomeService) {
+    	
+    	this.people = MyAwesomeService.people;
+    	
+    });
+    
+    angular.module("DogModule").service("MyAwesomeService", function() {
+    	this.people = [
+    		{name:"John",     state:"New York"},
+    		{name:"Amy",      state:"New York"},
+    		{name:"Austin",   state:"California"},
+    		{name:"Katie",    state:"California"},
+    		{name:"Courtney", state:"Texas"},
+    		{name:"Scout",    state:"Texas"}
+    	];
+    });
+  
+  </script>
+
+</body>
+</html>

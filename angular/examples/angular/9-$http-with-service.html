@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html data-ng-app="DogModule">
+<head>
+<meta charset="UTF-8">
+<title>$http with custom service</title>
+</head>
+<body>
+
+  <div data-ng-controller="CatController as cat">
+    
+    <input type="text" data-ng-model="input"/>
+    <button data-ng-click="cat.getPokemon(input)">Get Pokemon</button>
+    
+    <div data-ng-show="cat.pokemon">
+      <div>{{cat.pokemon.name}}</div>
+      <img alt="Pokemon Image" data-ng-src="{{cat.pokemon.sprites.front_default}}"/>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script type="text/javascript">
+  
+    angular.module("DogModule", []);
+    
+    angular.module("DogModule").controller("CatController", function(MyAwesomeService) {
+    	
+    	var catData = this;
+    	
+    	catData.getPokemon = function(input) {
+    		
+    		var promise = MyAwesomeService.sendRequestForPokemon(input);
+    		
+    		promise.then(function(response){
+    			//console.log("success");    			
+    			catData.pokemon = response.data;
+    		}, function(response){
+    			//console.log("failure");
+    		});
+    		
+    	}
+    	
+    });
+    
+    angular.module("DogModule").service("MyAwesomeService", function($http) {
+    	
+    	var data = this;
+    	
+    	data.sendRequestForPokemon = function(input) {
+    		return $http({
+    			method:"GET",
+    			url:"https://pokeapi.co/api/v2/pokemon/" + input + "/"
+    		});
+    	}
+    });
+  
+  </script>
+
+</body>
+</html>

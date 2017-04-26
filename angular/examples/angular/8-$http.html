@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html data-ng-app="DogModule">
+<head>
+<meta charset="UTF-8">
+<title>$http example</title>
+</head>
+<body>
+
+  <div data-ng-controller="CatController as cat">
+    
+    <input type="text" data-ng-model="input"/>
+    <button data-ng-click="cat.getPokemon(input)">Get Pokemon</button>
+    
+    <div data-ng-show="cat.pokemon">
+      <div>{{cat.pokemon.name}}</div>
+      <img alt="Pokemon Image" data-ng-src="{{cat.pokemon.sprites.front_default}}"/>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script type="text/javascript">
+  
+    angular.module("DogModule", []);
+    
+    angular.module("DogModule").controller("CatController", function($http) {
+    	
+    	var catData = this; // can't reference 'this' CatController inside functions 
+    	
+    	catData.getPokemon = function(input) {
+    		
+    		$http({
+    			method:"GET",
+    			url:"https://pokeapi.co/api/v2/pokemon/" + input + "/"
+    		}).then(function(response){
+    			//console.log("success");
+    			//console.log(response);
+    			
+    			catData.pokemon = response.data;
+    			
+    		}, function(response){
+    			//console.log("failure");
+    			//console.log(response);
+    		});
+    		
+    	}
+    	
+    });
+  
+  </script>
+
+</body>
+</html>

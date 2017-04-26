@@ -1,0 +1,7 @@
+<button class="btn btn-primary" data-ng-click="home.pleaseGo()">Please Go</button>
+
+<div>
+  <h1 data-ng-repeat="light in home.lights"><span class="label" data-ng-class="light.color">{{light.text}}</span></h1>
+</div>
+
+<img data-ng-src="images/go-ready.png" style="position:fixed; bottom:0px; width:100px;"/>
