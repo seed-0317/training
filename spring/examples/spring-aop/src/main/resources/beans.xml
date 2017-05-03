@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
 
-<!--   Scan for spring beans in package com.ex recursively -->
+<!--   Scan for spring beans in package com.example recursively -->
   <context:component-scan base-package="com.example"/>
   
 <!--   Enable AOP -->

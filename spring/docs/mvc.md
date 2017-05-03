@@ -16,7 +16,7 @@
   * JSPs
   * Velocity
 
-```
+```xml
 <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
   <property name="cache" value="true"/>
   <property name="prefix" value=""/>
@@ -31,7 +31,7 @@
 * `@RequestMapping`
   * Specifies what request this method will handle
 
-```
+```java
 @Controller
 public class TestController {
 

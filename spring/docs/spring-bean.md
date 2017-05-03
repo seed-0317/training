@@ -5,9 +5,8 @@
 
 ### xml
 
-```
+```xml
 <bean name="beanAImpl" class="com.example.beans.BeanAImpl">
-
 
 </bean>
 ```
@@ -15,7 +14,7 @@
 ### annotation
 * Other annotations can be used: `@Bean`, `@Controller`, `@Service`, `@Repository`
 
-```
+```java
 @Component
 public class BeanAImpl implements BeanA {
 

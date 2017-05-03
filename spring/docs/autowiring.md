@@ -13,13 +13,13 @@
 * Define beans in `beans.xml`
 * Do not define dependencies
 
-```
+```xml
 <bean name="beanAImpl" class="com.example.beans.BeanAImpl" autowire="byType"/>
 
 <bean name="beanBImpl" class="com.example.beans.BeanBImpl"/>
 ```
 
-```
+```java
 public class BeanAImpl implements BeanA {
 
 	private BeanB dog;
@@ -37,11 +37,11 @@ public class BeanAImpl implements BeanA {
   * defines spring bean
   * allows it to be considered for auto-detection
 
-```
+```xml
 <context:component-scan base-package="com.example"/>
 ```
 
-```
+```java
 @Component
 public class BeanAImpl implements BeanA {
 

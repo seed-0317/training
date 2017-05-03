@@ -6,7 +6,7 @@
 ### simple example
 * return data in response body
 
-```
+```java
 @RestController
 @RequestMapping(value="/api")
 public class RestAPI {
@@ -24,7 +24,7 @@ public class RestAPI {
 * can set HTTP status code
 * can set HTTP headers
 
-```
+```java
 @RestController
 @RequestMapping(value="/api")
 public class RestAPI {

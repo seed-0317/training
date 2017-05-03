@@ -15,7 +15,7 @@
 * `ClassPathXmlApplicationContext`
 * `FileSystemXmlApplicationContext`
 
-```
+```java
 ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
 ```
 

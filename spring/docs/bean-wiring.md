@@ -4,7 +4,7 @@
 
 ### setter injection example
 
-```
+```xml
 <bean name="beanAImpl" class="com.example.beans.BeanAImpl">
   <property name="dog" ref="beanBImpl"/>
 </bean>
@@ -12,7 +12,7 @@
 <bean name="beanBImpl" class="com.example.beans.BeanBImpl"/>
 ```
 
-```
+```java
 public class BeanAImpl implements BeanA {
 
 	private BeanB dog;
@@ -26,7 +26,7 @@ public class BeanAImpl implements BeanA {
 
 ### constructor injection example
 
-```
+```xml
 <bean name="beanAImpl" class="com.example.beans.BeanAImpl">
   <constructor-arg ref="beanBImpl"/>
 </bean>
@@ -34,7 +34,7 @@ public class BeanAImpl implements BeanA {
 <bean name="beanBImpl" class="com.example.beans.BeanBImpl"/>
 ```
 
-```
+```java
 public class BeanAImpl implements BeanA {
 
 	private BeanB dog;

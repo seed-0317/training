@@ -19,7 +19,7 @@
 * where you **will** inject
 * AspectJ pointcut expression
 
-```
+```java
 execution(* com.example.service.EventService.play*(..))
 ```
 

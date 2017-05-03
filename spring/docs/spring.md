@@ -23,7 +23,7 @@
 
 We can turn this code
 
-```
+```java
 public class BeanAImpl implements BeanA {
 
 	private BeanB dog = new BeanBImpl();
@@ -33,7 +33,7 @@ public class BeanAImpl implements BeanA {
 
 into this code
 
-```
+```java
 public class BeanAImpl implements BeanA {
 
 	private BeanB dog;

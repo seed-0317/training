@@ -31,7 +31,7 @@
 
 ### DaoImpl
 
-```
+```java
 @Component
 public class DaoImpl implements Dao {
 
@@ -56,7 +56,7 @@ public class DaoImpl implements Dao {
 
 ### BusinessLogicImpl
 
-```
+```java
 @Service
 public class BusinessLogicImpl implements BusinessLogic {
 
@@ -79,13 +79,13 @@ public class BusinessLogicImpl implements BusinessLogic {
 
 ### Enable `@Transactional` annotation
 
-```
+```xml
 <tx:annotation-driven/>
 ```
 
 ### DataSource
 
-```
+```xml
 <bean id="mydataSource" class="org.apache.commons.dbcp.BasicDataSource">  
     <property name="driverClassName"  value="oracle.jdbc.driver.OracleDriver"></property>  
     <property name="url" value="#{systemEnvironment['URL']}"></property>  
@@ -96,7 +96,7 @@ public class BusinessLogicImpl implements BusinessLogic {
 
 ### SessionFactory
 
-```
+```xml
 <bean id="mySessionFactory"  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">  
     <property name="dataSource" ref="mydataSource"></property>  
 
@@ -113,7 +113,7 @@ public class BusinessLogicImpl implements BusinessLogic {
 
 ### TransactionManager
 
-```
+```xml
 <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">  
   <property name="sessionFactory" ref="mySessionFactory"/>  
 </bean>  
