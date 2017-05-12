@@ -79,6 +79,7 @@ Fill out **Source Code Management**
 * url: `https://github.com/revature-training/boot-app.git`
 * name: `origin`
 * refspec: `+refs/pull/*:refs/remotes/origin/pr/*`
+* Branch Specifier: `${sha1}`
 
 <img alt="source code management" src="images/11.png"
 width="700px"/>
