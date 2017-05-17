@@ -8,7 +8,7 @@ pip3 install virtualenv
 ```
 
 ```sh
-pip install virtualenvwrapper
+pip3 install virtualenvwrapper
 ```
 
 ```sh
