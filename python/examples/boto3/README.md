@@ -1,6 +1,4 @@
-# boto3 examples
-* [listS3Buckets](listS3Buckets)
-
+# Boto 3 examples
 
 ### Setup
 
@@ -25,7 +23,7 @@ mkvirtualenv boto3-venv
 First `cd` into project
 
 ```sh
-cd listS3Buckets/
+cd boto3/
 ```
 
 Notice that `cd`-ing into this directory activated a virtual environment.  You are now using `python` from
@@ -41,13 +39,15 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+
 ### Run
 
-There are many examples in this project.  Let's run one of them:
+There are several examples in this project.  Let's run one of them:
 
 ```sh
-python s3/listBuckets.py
+python s3/list_buckets.py
 ```
+
 
 ### Tear Down
 
