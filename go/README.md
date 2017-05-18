@@ -26,3 +26,5 @@
 ###### videos
 * [Ivan Danyliuk - Visualizing Concurrency in Go](https://www.youtube.com/watch?v=KyuFeiG3Y60)
 * [Rob Pike - 'Concurrency Is Not Parallelism'](https://www.youtube.com/watch?v=cN_DpYBzKso)
+* [Go Proverbs](https://www.youtube.com/watch?v=PAAkCSZUG1c&t=90s)
+
