@@ -7,8 +7,6 @@
 * [data structures](data-structures.md)
 * [range](range.md)
 * [pointers](pointers.md)
-* [](structs.md)
-* [](test.md)
 
 ### other
 * [tools](tools.md)
