@@ -8,6 +8,7 @@
 * [range](range.md)
 * [pointers](pointers.md)
 * [structs](structs.md)
+* [composition](composition.md)
 * [interfaces](interfaces.md)
 * [errors](errors.md)
 
